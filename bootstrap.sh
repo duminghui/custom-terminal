@@ -70,9 +70,9 @@ variable_set() {
     fi
 }
 
-lnif() {
+lnih() {
     if [ -e "$1" ]; then
-        ln -sf "$1" "$2"
+        ln -svih "$1" "$2"
     fi
     ret="$?"
     debug
@@ -117,19 +117,19 @@ create_symlinks() {
     local source_path="$1"
     local target_path="$2"
     msg "Setting up zsh custom symlinks."
-    lnif "$source_path/zsh" "$target_path/.custom-zsh"
-    lnif "$source_path/zsh/.zshrc" "$target_path/.zshrc"
+    lnih "$source_path/zsh" "$target_path/.custom-zsh"
+    lnih "$source_path/zsh/.zshrc" "$target_path/.zshrc"
 
     msg 'Setting up vim custom symlinks.'
-    lnif "$source_path/vim/.vimrc.local"         "$target_path/.vimrc.local"
-    lnif "$source_path/vim/.vimrc.bundles.local" "$target_path/.vimrc.bundles.local"
-    lnif "$source_path/vim/.vimrc.before.local"  "$target_path/.vimrc.before.local"
-    lnif "$source_path/vim/.xvimrc"              "$target_path/.xvimrc"
-    lnif "$source_path/vim/.ideavimrc"           "$target_path/.ideavimrc"
+    lnih "$source_path/vim/.vimrc.local"         "$target_path/.vimrc.local"
+    lnih "$source_path/vim/.vimrc.bundles.local" "$target_path/.vimrc.bundles.local"
+    lnih "$source_path/vim/.vimrc.before.local"  "$target_path/.vimrc.before.local"
+    lnih "$source_path/vim/.xvimrc"              "$target_path/.xvimrc"
+    lnih "$source_path/vim/.ideavimrc"           "$target_path/.ideavimrc"
 
     msg 'Setting up tmux custom symlinks.'
-    lnif "$source_path/tmux/.tmux.conf" "$target_path/.tmux.conf"
-    lnif "$source_path/tmux/.tmux.conf.local" "$target_path/.tmux.conf.local"
+    lnih "$source_path/tmux/.tmux.conf" "$target_path/.tmux.conf"
+    lnih "$source_path/tmux/.tmux.conf.local" "$target_path/.tmux.conf.local"
 
     ret="$?"
     success "Setting up symlinks."
