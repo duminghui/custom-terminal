@@ -1,9 +1,9 @@
-# terminal-custom
-## zsh custom
+# custom-terminal
+## custom zsh
     base on oh-my-zsh
-## vim custom
+## custom vim
     base on spf13-vim-3
-## tmux custom
+## custom mux
     base on https://github.com/gpakosz/.tmux
 ## install script
-    base on spf13-vim-3
+    base on spf13-vim-3 install script
