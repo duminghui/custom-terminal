@@ -105,6 +105,3 @@ export EDITOR=vim
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-alias gem_g_outdated='rvm @global do gem outdated'
-alias gem_g_update='rvm @global do gem update'
-alias gem_g_cleanup='rvm @global do gem cleanup'
