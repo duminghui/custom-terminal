@@ -46,12 +46,9 @@ ZSH_CUSTOM=$HOME/.custom-zsh
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(autojum brew brew-cask gem git gradle osx pod ruby xcode tmux)
-
-source $ZSH/oh-my-zsh.sh
+plugins=(autojum brew brew-cask gem git gradle osx pod ruby xcode tmux vi-mode)
 
 # User configuration
-
 
 export ANDROID_HOME=/usr/local/opt/android-sdk
 export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
@@ -74,6 +71,8 @@ export DISABLE_AUTO_TITLE=true
 # export NO_BUCKD=1
 #export PATH="/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/android-sdk/tools:/usr/local/opt/android-sdk/platform-tools:/usr/local/opt/maven/libexec/bin:/usr/local/opt/gradle/bin:/Library/Java/JavaVirtualMachines/jdk.latest/Contents/Home/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
+
+source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
