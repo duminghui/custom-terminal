@@ -66,7 +66,11 @@ export GROOVY_HOME=/usr/local/opt/groovy/libexec
 export PATH=$GROOVY_HOME/bin:$PATH
 export PATH=/usr/local/bin:$PATH
 export MONO_GAC_PREFIX="/usr/local"
+#tmux start
+export PATH=$PATH:~/bin
 export EDITOR=vim
+export DISABLE_AUTO_TITLE=true
+#tmux end
 # export NO_BUCKD=1
 #export PATH="/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/android-sdk/tools:/usr/local/opt/android-sdk/platform-tools:/usr/local/opt/maven/libexec/bin:/usr/local/opt/gradle/bin:/Library/Java/JavaVirtualMachines/jdk.latest/Contents/Home/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
