@@ -51,5 +51,11 @@
 "}
 "中文文档{
 Bundle 'vimcn/vimcdoc'
+Bundle 'vimcn/ctrlp.cnx'
+Bundle 'vimcn/NERD_tree.vim.cnx'
+Bundle 'vimcn/NERD_commenter.cnx'
 "}
-Bundle 'szw/vim-ctrlspace'
+Bundle 'vim-ctrlspace/vim-ctrlspace'
+Bundle 'udalov/kotlin-vim'
+Bundle 'OmniSharp/omnisharp-vim'
+Bundle 'tpope/vim-dispatch'
