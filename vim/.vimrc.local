@@ -10,7 +10,6 @@ set textwidth=80
 set colorcolumn=+1
 "set shell=/usr/local/bin/zsh
 "}
-nnoremap <leader>jd :YcmCompleter GoTo<CR>
 "hi link HelpBar Normal
 "hi link HelpStar Normal
 " vi-airline {
@@ -131,13 +130,17 @@ let g:ctrlp_funky_syntax_highlight = 1
 "vim-indent-guides{
 let g:indent_guides_guide_size = 1
 "}
+"YouCompleteMe {
+nnoremap <leader>jd :YcmCompleter GoTo<CR>
+let g:ycm_always_populate_location_list = 1
+"}
 "scrooloose/syntastic{
 " set statusline+=%#warningmsg#
 " set statusline+=${SyntasticStatuslineFlag()}
 " set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
+let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_loc_list_height = 5
