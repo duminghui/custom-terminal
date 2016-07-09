@@ -1,5 +1,7 @@
 # custom-terminal
+deprecated!
 
+use [duminghui/dotfiles](https://github.com/duminghui/dotfiles)
 ## custom zsh
 base on [oh-my-zsh]
 ## custom vim
